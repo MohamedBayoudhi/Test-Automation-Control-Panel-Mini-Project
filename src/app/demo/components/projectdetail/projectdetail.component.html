@@ -1,0 +1,17 @@
+<div class="col-12 xl:col-12">
+  <div class="card">
+      <div class="container">
+    <h2>Project Details</h2>
+    <div *ngIf="project">
+      <p><strong>ID:</strong> {{ project.id }}</p>
+      <p><strong>Name:</strong> {{ project.name }}</p>
+      <p><strong>Latest Test Date:</strong> {{ project.latestTestDate }}</p>
+      <p><strong>Failed Test Cases:</strong> {{ project.failedTestCases }}</p>
+      <p><strong>Success Test Cases:</strong> {{ project.successTestCases }}</p>
+    </div>
+    <div *ngIf="!project">
+      <p>Project not found.</p>
+    </div>
+      </div>
+  </div>
+</div>

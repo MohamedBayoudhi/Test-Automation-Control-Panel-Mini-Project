@@ -1,0 +1,26 @@
+<div class="layout-topbar">
+    
+
+   
+
+    <button #menubutton class="p-link layout-menu-button layout-topbar-button" (click)="layoutService.onMenuToggle()">
+        <i class="pi pi-bars"></i>
+    </button>
+     
+    <div class="user-info">
+      <span >{{ firstName }} {{ lastName }}</span>
+    </div>
+
+   <div>
+    <img [src]="imageUrl" alt="" class="user-image "  height="50" style="border-radius: 50%;"/>
+
+   </div>
+
+    <div #topbarmenu class="layout-topbar-menu" [ngClass]="{'layout-topbar-menu-mobile-active': layoutService.state.profileSidebarVisible}">
+       
+    </div>
+    <div class="flex flex-wrap gap-2">
+        <!-- <i class="pi-sign-out" (click)="logout"></i> -->
+        <p-button icon="pi pi-sign-out" styleClass="p-button-rounded p-button-outlined" (click)="logout()"></p-button>  
+     </div>
+</div>

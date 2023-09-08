@@ -1,0 +1,27 @@
+{
+    "data":[
+        {
+            "id":"1",
+            "name": "Project1",
+            "latestTestDate": "2023-08-15",
+            "failedTestCases": 20,
+            "successTestCases": 70
+        },
+        {
+            "id": "2",
+            "name": "Project2",
+            "latestTestDate": "2023-08-18",
+            "failedTestCases": 15,
+            "successTestCases": 75
+          },
+          {
+            "id": "3",
+            "name": "Project3",
+            "latestTestDate": "2023-08-20",
+            "failedTestCases": 25,
+            "successTestCases": 60
+          }
+    ]
+
+
+}
